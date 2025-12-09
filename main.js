@@ -1,4 +1,4 @@
-const { app, BrowserWindow, shell } = require('electron');
+const { app, BrowserWindow, shell, globalShortcut } = require('electron');
 const path = require('path');
 
 function createWindow() {
@@ -36,6 +36,17 @@ function createWindow() {
     if (!url.startsWith('https://gemini.google.com') && !url.startsWith('https://accounts.google.com')) {
       event.preventDefault();
       shell.openExternal(url);
+    }
+  });
+
+  mainWindow.webContents.on('before-input-event', (event, input) => {
+    if (input.type === 'keyDown' && input.key === 'j' && input.meta && !input.shift && !input.alt && !input.control) {
+      event.preventDefault();
+      mainWindow.webContents.sendInputEvent({
+        type: 'keyDown',
+        keyCode: 'O',
+        modifiers: ['meta', 'shift']
+      });
     }
   });
 
