@@ -12,9 +12,8 @@ A native macOS desktop application that wraps Google Gemini in an Electron shell
 
 ## Download
 
-Download the latest DMG from the [Releases](https://github.com/jonclegg/gemini-electron-client/releases) page:
-- `Gemini Client-x.x.x.dmg` - Intel Macs (x64)
-- `Gemini Client-x.x.x-arm64.dmg` - Apple Silicon Macs (M1/M2/M3)
+- [**Gemini Client-1.0.0.dmg**](https://github.com/jonclegg/gemini-electron-client/releases/download/v1.0.0/Gemini.Client-1.0.0.dmg) - Intel Macs (x64)
+- [**Gemini Client-1.0.0-arm64.dmg**](https://github.com/jonclegg/gemini-electron-client/releases/download/v1.0.0/Gemini.Client-1.0.0-arm64.dmg) - Apple Silicon Macs (M1/M2/M3)
 
 ## Development
 
