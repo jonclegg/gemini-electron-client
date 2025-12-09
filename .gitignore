@@ -1,0 +1,6 @@
+node_modules/
+dist/
+build.sh
+*.p8
+.DS_Store
+

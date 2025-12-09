@@ -1,0 +1,9 @@
+#!/bin/bash
+
+export APPLE_API_KEY="$(pwd)/AuthKey_XXXXXXXXXX.p8"
+export APPLE_API_KEY_ID="XXXXXXXXXX"
+export APPLE_API_ISSUER="your-issuer-id-here"
+export APPLE_TEAM_ID="YOUR_TEAM_ID"
+
+npm run build
+
